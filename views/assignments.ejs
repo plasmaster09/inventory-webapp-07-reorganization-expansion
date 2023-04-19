@@ -94,12 +94,9 @@
                     <div class="input-field col s6">
                         <select id="subjectInput" name="subject" required>
                             <option value="" disabled selected>Choose your subject</option>
-                            <option value=1>Comp Sci</option>
-                            <option value=2>Math</option>
-                            <option value=3>Language</option>
-                            <option value=4>Music</option>
-                            <option value=5>Biology</option>
-                            <option value=6>History</option>
+                            <% for (let i = 0; i < subjectlist.length; i++) { %>
+                                <option value=<%=subjectlist[i].subjectId %>><%= subjectlist[i].subjectName %></option>
+                            <% } %>
                         </select>
                         <label for="subjectInput">Subject:</label>
                     </div>

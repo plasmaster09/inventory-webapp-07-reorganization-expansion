@@ -59,8 +59,8 @@ app.get( "/assignments", ( req, res ) => {
                 if (error2)
                     res.status(500).send(error2); //Internal Server Error
                 else {
-                    let data = {hw: results[0], subjectlist: results2}; // results is still an array, get first (only) element
-                    res.render('detail', data); 
+                    let data = {hwlist: results, subjectlist: results2}; // results is still an array, get first (only) element
+                    res.render('assignments', data); 
                     // What's passed to the rendered view: 
                     //  hwlist: [
                     //     {  id: __ , title: __ , priority: __ , subject: __ ,  dueDateFormatted: __ },
@@ -107,7 +107,7 @@ app.get( "/assignments/:id", ( req, res ) => {
                 if (error2)
                     res.status(500).send(error2); //Internal Server Error
                 else {
-                    let data = results[0]; // results is still an array, get first (only) element
+                    let data = {hw: results[0], subjectlist: results2}; // results is still an array, get first (only) element
                     res.render('detail', data); 
                     // What's passed to the rendered view: 
                     //  hw: { id: ___ , title: ___ , priority: ___ , 
