@@ -15,23 +15,8 @@
 </head>
 
 <body>
-    <!-- Nav bar -->
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="/" class="brand-logo"><i class="material-icons left">school</i>Homework Manager</a>
-                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="desktop-nav" class="right hide-on-med-and-down">
-                    <li><a href="/"><i class="material-icons left">home</i> Home</a></li>
-                    <li><a href="/assignments"><i class="material-icons left">list</i> Assignments</a></li>
-                </ul>
-            </div>
-        </nav>
-        <ul id="mobile-nav" class="sidenav">
-            <li><a href="/"><i class="material-icons left">home</i> Home</a></li>
-            <li><a href="/assignments"><i class="material-icons left">list</i> Assignments</a></li>
-        </ul>
-    </header>
+    
+    <%- include('partials/navbar') %>
 
     <!-- Actual page content! -->
     <div class="container">

@@ -9,4 +9,5 @@ FROM assignments
 JOIN subjects
     ON assignments.subjectId = subjects.subjectId
 WHERE assignmentId = ?
+AND assignments.userId = ?
 -- For DATE_FORMAT usage see: https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format

@@ -1,7 +1,7 @@
 # Part 07: More CRUD operations, code reorganization
 
 This tutorial follows after:
-[Part 05: Implementing CRUD operations: Using Forms and POST requests](https://github.com/atcs-wang/inventory-webapp-05-handling-forms-post-crud)
+[# Part 06: Authentication and Authorization ](https://github.com/atcs-wang/inventory-webapp-05-handling-forms-post-crud)
 
 Our app currently has a set of CRUD operations allowing us to Create, Read, Update, and Delete data in the `assignments` table.
 

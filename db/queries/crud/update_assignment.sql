@@ -9,3 +9,5 @@ SET
     description = ?
 WHERE
     assignmentId = ?
+AND
+    userId = ?

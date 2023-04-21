@@ -16,6 +16,7 @@ const create_subjects_table_sql = `
     CREATE TABLE subjects (
         subjectId INT NOT NULL AUTO_INCREMENT,
         subjectName VARCHAR(45) NOT NULL,
+        userId VARCHAR(255) NULL,
         PRIMARY KEY (subjectId));
 `
 db.execute(create_subjects_table_sql);
@@ -28,6 +29,7 @@ const create_assignments_table_sql = `
         subjectId INT NOT NULL,
         dueDate DATE NULL,
         description VARCHAR(150) NULL,
+        userId VARCHAR(255) NULL,
         PRIMARY KEY (assignmentId),
         INDEX assignmentSubject_idx (subjectId ASC),
         CONSTRAINT assignmentSubject
