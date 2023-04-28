@@ -11,7 +11,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const db = require('./db/db_connection');
 const app = express();
-const port = 3000;
+const port = 8080;
 
 // Configure Express to use EJS
 app.set( "views",  path.join(__dirname , "views"));
